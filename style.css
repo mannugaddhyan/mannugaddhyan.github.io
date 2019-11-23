@@ -1,0 +1,233 @@
+nav {
+    background: transparent;
+    height: 50px;
+}
+
+#myNavbar>ul>li {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.8s ease-out;
+}
+
+#myNavbar>ul>li:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#myNavbar>ul>li>a {
+    color: #25272b;
+    font-family: 'Poppins', sans-serif;
+    padding: 6px 0px;
+    margin: 0px 10px;
+    z-index: 1030;
+    font-size: 18px;
+}
+
+.add-bgd {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0px;
+}
+
+.navbar-collapse {
+    border-radius: 6%;
+}
+
+#home {
+    background: url("https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/images/home-bg.jpeg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home-container {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    height: 50%;
+}
+
+#name {
+    font-family: 'Vidaloka', serif;
+    text-transform: uppercase;
+    color: white;
+    word-wrap: break-word;
+    font-size: 5vw;
+    letter-spacing: 1vw;
+}
+
+#keywords {
+    font-family: 'Vidaloka', serif;
+    color: white;
+    word-wrap: break-word;
+    font-size: 2vw;
+}
+
+#connect-with-me {
+    padding: 0% 5%;
+}
+
+#connect-with-me>li {
+    display: inline-block;
+    padding: 0% 1%;
+}
+
+#connect-with-me>li>a>i {
+    color: white;
+    font-size: 2vw;
+}
+
+#h1-about, #h1-projects {
+    font-family: 'Vidaloka', serif;
+    padding-top: 4%;
+    text-decoration: underline;
+    font-size: 4vw;
+}
+
+#about-hemakshi {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+.pagination > li {
+    cursor: pointer;
+}
+
+#pagination-projects>li>a, #pagination-projects>li>a:hover {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border: white;
+    text-align: center;
+    border-radius: 0px;
+}
+
+#pagination-projects>li.active > a, #pagination-projects>li.active > a:hover {
+    background-color: white;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
+.row {
+    margin: 3%;
+}
+
+.card-img-overlay {
+    display: none;
+    margin-left: 15px;
+    background: rgba(0,0,0,0.4);
+}
+
+.card-img:hover + .card-img-overlay, .card-img-overlay:hover {
+    display: block;
+}
+
+.card-title, .card-text, .card-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.card-text {
+    margin-bottom: 6%;
+}
+
+.card-link {
+    color: white;
+    border: 1px solid black;
+    border-radius: 6%;
+    padding: 2%;
+    text-decoration: underline;
+}
+
+.card-link:hover {
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 6%;
+    padding: 2%;
+    text-decoration: underline;
+}
+
+#resume {
+    background-color: white;
+    color: black !important;
+}
+
+@media (max-width: 991px) {
+    #myNavbar {
+        background: rgba(0,0,0,0.5);
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 766px) {
+    #name {
+        font-size: 6vw;
+    }
+    #keywords {
+        font-size: 3vw;
+    }
+    #connect-with-me>li>a>i {
+        font-size: 3vw;
+    }
+    #h1-about, #h1-projects {
+        padding: 6%;
+        font-size: 5vw;
+    }
+    .row {
+        margin: 1%;
+    }
+    .col-md-6 {
+        margin: 2%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 728px) {
+    #name {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 575px) {
+    #home-container {
+        top: 40%;
+        bottom: 10%;
+    }
+    #name {
+        font-size: 8vw;
+    }
+    #h1-about, #h1-projects {
+        padding: 6%;
+        font-size: 8vw;
+    }
+    #keywords {
+        font-size: 4vw;
+    }
+    #connect-with-me>li>a>i {
+        font-size: 5vw;
+    }
+    .card-title {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    .card-text {
+        font-size: 10px;
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 360px) {
+    #pagination-projects > li > a {
+        padding: 1vw;
+    }
+}
